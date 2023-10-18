@@ -1,0 +1,18 @@
+{
+  "manifest_version": 3,
+  "name": "YT_RM_POPUP",
+  "version": "1.0",
+  "description": "You Tube ReMove Popup",
+  "icons": {
+    "16": "icon-16.png"
+  },
+  "content_scripts": [
+    {
+      "js": ["content.js"],
+      "matches": [
+        "https://youtube.com/*",
+        "https://youtube.com.vn/*"
+      ]
+    }
+  ]
+}
