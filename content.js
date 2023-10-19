@@ -13,27 +13,16 @@ function checkForElementAndHide() {
   for(i of classes){
     var popupContainer = document.querySelector(i);
     if (popupContainer) {
-			console.log("yt_rm_popup: ", "Gotcha!")
-      // The element with the specified class exists.
-			popupContainer.style.display = 'none'; // Hide the element.
-      // clearInterval(intervalId); // Clear the interval.
-			// popupContainer.remove();
-      // return;
+			if (popupContainer.style.display != 'none'){
+				console.log("yt_rm_popup: ", "Gotcha!")
+				popupContainer.style.display = 'none'; // Hide the element.
+				continue;
+			}
     }
   }
-  // var popupContainer = document.querySelector('tp-yt-iron-overlay-backdrop');
-  // // tp-yt-iron-overlay-backdrop.opened
-
-  // if (popupContainer) {
-  //   // The element with the specified class exists.
-  //   popupContainer.style.display = 'none'; // Hide the element.
-  //   clearInterval(intervalId); // Clear the interval.
-  // }
-}
 
 console.log("yt_rm_popup: ", "Im working on it!")
 
-// Set an interval to check for the element every 1000 milliseconds (1 second).
 const intervalId = setInterval(checkForElementAndHide, 1000);
 
 setTimeout(() => {
