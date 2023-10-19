@@ -1,5 +1,4 @@
 function checkForElementAndHide() {
-  // const popupContainer = document.querySelector('ytd-popup-container.style-scope.ytd-app');
   const classes = [
     "ytd-popup-container.style-scope.ytd-app",
     "tp-yt-iron-overlay-backdrop",
@@ -20,6 +19,7 @@ function checkForElementAndHide() {
 			}
     }
   }
+}
 
 console.log("yt_rm_popup: ", "Im working on it!")
 
