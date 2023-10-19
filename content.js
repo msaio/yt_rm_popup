@@ -31,6 +31,8 @@ function checkForElementAndHide() {
   // }
 }
 
+console.log("yt_rm_popup: ", "Im working on it!")
+
 // Set an interval to check for the element every 1000 milliseconds (1 second).
 const intervalId = setInterval(checkForElementAndHide, 1000);
 
