@@ -12,7 +12,7 @@
       "matches": [
         "https://youtube.com/*",
         "https://youtube.com.vn/*",
-        "https://www.youtube.com.vn/*",
+        "https://www.youtube.com/*",
         "https://www.youtube.com.vn/*"
       ]
     }
