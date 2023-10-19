@@ -13,11 +13,12 @@ function checkForElementAndHide() {
   for(i of classes){
     var popupContainer = document.querySelector(i);
     if (popupContainer) {
+			console.log("yt_rm_popup: ", "Gotcha!")
       // The element with the specified class exists.
 			popupContainer.style.display = 'none'; // Hide the element.
       // clearInterval(intervalId); // Clear the interval.
 			// popupContainer.remove();
-      return;
+      // return;
     }
   }
   // var popupContainer = document.querySelector('tp-yt-iron-overlay-backdrop');
